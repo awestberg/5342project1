@@ -1,0 +1,291 @@
+/*
+body {
+    overflow: hidden;
+}*/
+
+
+
+#wrapper {
+    height: 2200px;
+    overflow: hidden;
+}
+
+#trump_img {
+    width: 100%;
+    height: 2060px;
+    background: url('../images/trump.png') no-repeat;
+    background-size: 100%;
+    margin-top: 15px;
+}
+
+#trumpology_img {
+    height: 220px;
+    background: url('../images/trumpology3.png') no-repeat center center;
+    background-color: crimson;
+    margin: auto;
+    border-bottom: 5px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+}
+
+.empty {
+    height: 1px;   
+}
+
+#paper {
+    position: relative;
+    top: -1920px;
+}
+
+
+#reply {
+    position: relative;
+    top: -1000px;
+}
+
+#apology {
+    height: auto;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-bottom: 5px;
+}
+
+#go_apology {
+    position: fixed;
+    right: 50px;
+    top: 1450px;
+}
+
+
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  height: 38px;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid crimson;
+  cursor: pointer;
+  box-sizing: border-box; 
+  color: #FFF;
+  background-color: crimson;
+  float: right;
+}
+
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: red;
+  border-color: red; }
+
+
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[type="text"],
+textarea,
+select {
+    height: 200px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box; 
+    font-size: 1.5em;
+}
+
+
+/* Removes awkward default styles on some inputs for iOS */
+
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+
+
+/* ----------------- Start Grid for desktop screens ----------------- */
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #5e666d;
+}
+
+.row {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%; /* max width of content */
+    max-width: 1120px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+  .column,
+  .columns {
+    margin-left: 4%; /* column gutter */
+    float: left;
+    box-sizing: border-box;
+}    
+  
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; } /* prevents first column from acquiring a gutter on its left: typography 101 */
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+
+
+/* ----------------- End Grid for desktop screens ----------------- */
+@media screen and (max-width: 800px) {
+
+    textarea,
+select {
+  height: 150px;
+ }
+    
+#paper {
+    top: -2000px;
+}
+    
+#title {
+    font-size: 5em;
+}
+    
+#trumpology_img {
+    height: 180px;
+    background-size: 95%;
+}    
+
+#reply {
+    top: -1350px;
+}    
+
+#go_apology {
+    top: 875px;
+    }    
+}
+    
+@media (min-width: 0px) and (max-width: 500px) {
+
+input[type="text"],
+textarea,
+select {
+    height: 140px;
+    font-size: 1.25em;
+}    
+    
+#trump_img {
+    width: 600px;
+    height: 2060px;
+    margin-left: -60px;
+}    
+
+#trumpology_img {
+    height: 160px;
+}      
+    
+#paper {
+    top: -1870px;
+}
+    
+.five.columns {
+    width: 100%;   
+}
+    
+#reply {
+    top: -1500px;
+}      
+
+#go_apology {
+    top: 600px;
+}    
+
+#apology {
+    font-size: 1.5em;
+}
+    
+    .column,
+  .columns {
+    width: 100%;
+      
+    box-sizing: border-box;
+    }   
+    
+}
+
+
+/* ----------------- Misc Grid Commands ----------------- */
+
+/* Self Clearing Goodness: Fixes Issues with Rows Overlapping due to flow: left; */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
